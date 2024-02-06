@@ -11,7 +11,7 @@ bias3 = 0.5
 biases = [2, 3, 0.5]
 
 layer_outputs = [] ##output of current layer
-for neuron_weights, neuron_bias in zip(weights, biases):
+for neuron_weights, neuron_bias in zip(weights, biases): ##zip is an iterator that aggregates elements from 2 or more iterables
     neuron_output = 0 ##output of given neuron
     for n_input, weight in zip(inputs, neuron_weights):
         neuron_output += n_input*weight
