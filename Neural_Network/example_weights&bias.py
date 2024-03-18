@@ -15,3 +15,4 @@ for neuron_weights, neuron_bias in zip(weights, biases): ##zip is an iterator th
     layer_outputs.append(neuron_output)
     
 print(layer_outputs)
+
